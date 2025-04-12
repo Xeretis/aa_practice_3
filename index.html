@@ -4,41 +4,23 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Alphacademy</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="./uiverse.css" />
     </head>
     <body>
-        <h1 class="main-title">Todos</h1>
-        <form id="urlap" class="form">
-            <label class="checkbox-container">
-                <input checked="checked" type="checkbox" id="pipa" />
-                <div class="checkmark"></div>
-            </label>
-            <div>
-                <input
-                    type="text"
-                    class="input"
-                    id="szovegmozo"
-                    name="Keresés"
-                    placeholder="Keresés..."
-                    autocomplete="off"
-                />
-                <button class="button--submit" id="submit">Keresés</button>
-            </div>
-        </form>
-        <form id="create">
-            <input type="text" placeholder="Cim" class="input" id="create-title" />
-            <input type="text" placeholder="Leiras" class="input" id="create-description" />
-            <input type="checkbox" id="create-isCompleted" />
-            <div>
-                <input type="date" placeholder="Hatarido" class="input" id="create-dueDate" />
-
-                <button class="button--submit" type="submit">Letrehozas</button>
-            </div>
-        </form>
-        <div class="container" id="container">
-            <div></div>
-        </div>
-        <script src="script.js"></script>
+        <main class="container-fluid">
+            <hgroup class="animate__animated animate__fadeInUp animate__fast">
+                <h1>Média leltár</h1>
+                <p>CD-k, DVD-k, Blue-Ray lemezek és könyvek leltára</p>
+            </hgroup>
+        </main>
     </body>
 </html>
