@@ -21,9 +21,25 @@
                 <h1>Média leltár</h1>
                 <p>CD-k, DVD-k, Blue-Ray lemezek és könyvek leltára</p>
             </hgroup>
-        </main>
 
-        <article aria-busy="true"></article>
+            <article
+                aria-busy="true"
+                id="loading"
+                class="animate__animated animate__fadeInUp animate__fast"
+            ></article>
+
+            <div class="grid" id="grid"></div>
+
+            <div class="isbn-container">
+                <button
+                    class="animate__animated animate__fadeInUp animate__fast hidden"
+                    id="generate-button"
+                >
+                    ISBN Generálása
+                </button>
+                <p id="isbn"></p>
+            </div>
+        </main>
 
         <script src="script.js"></script>
     </body>
