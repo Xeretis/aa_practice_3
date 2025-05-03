@@ -13,7 +13,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles/styles.css" />
     </head>
     <body>
         <main class="container-fluid">
@@ -31,16 +31,13 @@
             <div class="grid" id="grid"></div>
 
             <div class="isbn-container">
-                <button
-                    class="animate__animated animate__fadeInUp animate__fast hidden"
-                    id="generate-button"
-                >
-                    ISBN Generálása
-                </button>
+                <a class="animate__animated animate__fadeInUp animate__fast" href="create.html">
+                    <button>Új létrehozása</button>
+                </a>
                 <p id="isbn"></p>
             </div>
         </main>
 
-        <script src="script.js"></script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>

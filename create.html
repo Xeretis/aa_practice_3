@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alphacademy - Média leltár - Létrehozás</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="styles/styles.css" />
+    </head>
+    <body>
+        <main class="container-fluid">
+            <form id="form">
+                <label for="isbn">ISBN Szám</label>
+                <input id="isbn" type="text" />
+                <label for="price">Ár</label>
+                <input id="price" type="number" placeholder="10" />
+                <label for="numberinstock">Darabszám</label>
+                <input id="numberinstock" type="number" placeholder="5" />
+                <fieldset>
+                    <legend>Típus:</legend>
+                    <input type="radio" id="cd" name="type" checked />
+                    <label for="cd">CD</label>
+                    <input type="radio" name="type" id="dvd" />
+                    <label for="dvd">DVD</label>
+                    <input type="radio" name="type" id="book" />
+                    <label for="book">Book</label>
+                    <input type="radio" name="type" id="blu-ray" />
+                    <label for="blu-ray">Blu-ray</label>
+                </fieldset>
+                <button type="submit">Mentés</button>
+            </form>
+            <a href="index.html"> Vissza </a>
+            <script src="scripts/create.js"></script>
+        </main>
+    </body>
+</html>

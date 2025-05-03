@@ -2,7 +2,6 @@
 let items;
 
 const loading = document.getElementById("loading");
-const generateButton = document.getElementById("generate-button");
 
 fetch("https://apichallenges.eviltester.com/simpleapi/items").then((res) =>
     res.json().then((data) => {
@@ -12,8 +11,6 @@ fetch("https://apichallenges.eviltester.com/simpleapi/items").then((res) =>
         loading.classList.add("animate__fadeOut");
 
         loading.style.display = "none";
-
-        generateButton.style.display = "block";
 
         const grid = document.getElementById("grid");
 
@@ -51,13 +48,3 @@ fetch("https://apichallenges.eviltester.com/simpleapi/items").then((res) =>
         }
     })
 );
-
-generateButton.addEventListener("click", () => {
-    fetch("https://apichallenges.eviltester.com/simpleapi/randomisbn").then((res) =>
-        res.text().then((isbn) => {
-            const isbnText = document.getElementById("isbn");
-
-            isbnText.innerText = isbn;
-        })
-    );
-});
