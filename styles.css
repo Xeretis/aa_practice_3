@@ -11,3 +11,17 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+// By Szabi
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+}
