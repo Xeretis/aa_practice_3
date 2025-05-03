@@ -4,6 +4,8 @@ let items;
 const loading = document.getElementById("loading");
 const generateButton = document.getElementById("generate-button");
 
+// Test comment
+
 fetch("https://apichallenges.eviltester.com/simpleapi/items").then((res) =>
     res.json().then((data) => {
         items = data.items;
